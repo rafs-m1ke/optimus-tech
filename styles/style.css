@@ -1,0 +1,44 @@
+@import url('./navbar.css');
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./metrics.css');
+@import url('./talents.css');
+@import url('./depositions.css');
+@import url('./footer.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --main-bg-color: #FFFFFF;
+    --titles-color: #101828;
+    --text-color: #667085;
+    --secondary-color: #8E2424;
+    --footer-color: #F9FAFB;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    width: 100vw;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    :root {
+        font-size: 12px;
+    }
+}

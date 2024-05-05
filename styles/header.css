@@ -1,0 +1,35 @@
+.header {
+    padding: 2rem 0;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    width: 80vw;
+}
+
+.header-aboutus {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.header-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.header-text {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 767px) {
+    .header-title {
+        text-align: center;
+    }
+}

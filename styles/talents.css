@@ -1,0 +1,97 @@
+.talents {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em 0 ;
+    margin: 2em auto;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.talents > h4 {
+    color: var(--secondary-color);
+    background-color: #8e242432;
+    padding: 5px 10px;
+    border-radius: 24px;
+    font-size: .9em;
+    font-weight: 500;
+}
+
+.talents > h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.talents > p {
+    font-size: 1.25em;
+    color: var(--text-color);
+}
+
+.talents > img {
+    text-align: center;
+    margin: 2em ;
+    width: 100%;
+    border-radius: 1.1rem;
+}
+
+.roles {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 70%;
+    align-items: center;
+}
+
+.roles h3 {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--titles-color);
+    align-self: flex-start;
+}
+
+.talents-role {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    width: 100%;
+    padding: 2em;
+}
+
+.talents-role > h4 {
+    color: var(--titles-color);
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.role-detail > p {
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.role-detail {
+    display: flex;
+    gap: 2em;
+}
+
+@media screen and (max-width: 767px) {
+    .roles {
+        width: 100%;
+    }
+
+    .talents > img {
+        width: 100%;
+    }
+
+    .talents-role {
+        width: 100%;
+    }
+
+    .talents h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,94 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10rem;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--titles-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-right: 1rem;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-right: 25%;
+    color: var(--text-color);
+    gap: 2.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.buttons {
+    display: flex;
+}
+
+#register-button, #enter-button  {
+    background-color: var(--secondary-color);
+    padding: 1rem 2rem;
+    border-radius: .5em;
+    color: var(--main-bg-color);
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
+#enter-button {
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .navbar {
+        justify-content: center;
+        padding: 1rem 2rem;
+    }
+
+    .menu {
+        margin: auto;
+        gap: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        flex-direction: column;
+        margin: auto;
+        gap: 1rem;
+        display: none;
+    }
+
+    .menu li {
+        width: 150px;
+        padding: 1.5rem 2rem;
+        background-color: var(--secondary-color);
+        color: white;
+        border-bottom: 1px solid var(--main-bg-color);
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    input[type="checkbox"]:checked ~ .menu {
+        display: block;
+    }
+
+}
