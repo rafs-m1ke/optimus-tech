@@ -1,2 +1,2 @@
 # optimus-tech
-7DaysOfCode
+7DaysOfCode Challenge
